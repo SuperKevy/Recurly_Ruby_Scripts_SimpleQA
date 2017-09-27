@@ -1,0 +1,103 @@
+C:\Users\Kevin\Desktop\Ruby_Scripts\spec>rspec sample_minimal.rb
+Results will be saved to tmp/spec-results/index.html
+start
+end
+FF
+An error occurred in an `after(:context)` hook.
+Failure/Error: @browser.close
+
+NoMethodError:
+  undefined method `close' for nil:NilClass
+# ./sample_minimal.rb:22:in `block (2 levels) in <top (required)>'
+
+
+Failures:
+
+  1) Google has word 'Google' on main page
+     Failure/Error: @browser = Watir::Browser.new
+
+     Selenium::WebDriver::Error::WebDriverError:
+        Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place
+ it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.
+     # ./spec/spec_helper.rb:113:in `new'
+     # ./spec/spec_helper.rb:113:in `block (2 levels) in <top (required)>'
+
+  2) Google has word 'Bing' as it's title
+     Failure/Error: @browser = Watir::Browser.new
+
+     Selenium::WebDriver::Error::WebDriverError:
+        Unable to find chromedriver. Please download the server from http://chromedriver.storage.googleapis.com/index.html and place
+ it somewhere on your PATH. More info at https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.
+     # ./spec/spec_helper.rb:113:in `new'
+     # ./spec/spec_helper.rb:113:in `block (2 levels) in <top (required)>'
+
+Finished in 0.48903 seconds (files took 0.67158 seconds to load)
+2 examples, 2 failures, 1 error occurred outside of examples
+
+Failed examples:
+
+rspec ./sample_minimal.rb:13 # Google has word 'Google' on main page
+rspec ./sample_minimal.rb:17 # Google has word 'Bing' as it's title
+
+
+C:\Users\Kevin\Desktop\Ruby_Scripts\spec>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+https://www.tutorialspoint.com/rspec/rspec_introduction.htm
+
+
+
+C:/Users/Kevin/Desktop/Ruby Scripts/Test.rb:44:in `<main>': uninitialized constant STOP (NameError)
+hello
+ - Currency set 
+Susbcription: 
+#<Recurly::Subscription activated_at: #
+<DateTime: 2017-09-22T23:21:42+00:00 ((2458019j,84102s,0n),+0s,2299161j)>, 
+address: nil, bank_account_authorized_at: nil, bulk: nil, canceled_at: nil, collection_method: "manual", 
+converted_at: nil, 
+cost_in_cents: nil, coupon_code: nil, coupon_codes: nil, 
+currency: "USD", current_period_ends_at: #<DateTime: 2017-10-07T23:21:42+00:00 ((2458034j,84102s,0n),+0s,2299161j)>, 
+current_period_started_at: #<DateTime: 2017-09-22T23:21:42+00:00 ((2458019j,84102s,0n),+0s,2299161j)>, 
+customer_notes: "No condiions", expires_at: nil, net_terms: 0, no_billing_info_reason: nil, pending_subscription: nil, 
+po_number: "1", quantity: 1, remaining_billing_cycles: nil, 
+revenue_schedule_type: "evenly", shipping_address_id: nil, 
+started_with_gift: false, state: "active", subscription_add_ons: [], 
+tax_in_cents: nil, tax_rate: nil, 
+tax_region: nil, tax_type: nil, terms_and_conditions: "No terms", 
+timeframe: nil, total_billing_cycles: nil, trial_ends_at: #<DateTime: 2017-10-07T23:21:42+00:00 ((2458034j,84102s,0n),+0s,2299161j)>, trial_started_at: #<DateTime: 2017-09-22T23:21:42+00:00 ((2458019j,84102s,0n),+0s,2299161j)>, 
+unit_amount_in_cents: 0, updated_at: #<DateTime: 2017-09-22T23:21:42+00:00 ((2458019j,84102s,0n),+0s,2299161j)>, 
+
+uuid: "401ab0d0aaefb77b331f8340dda4d170", vat_reverse_charge_notes: nil>
+
+
+
+
+
+
+
