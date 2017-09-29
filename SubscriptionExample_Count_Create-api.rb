@@ -18,10 +18,10 @@ require 'recurly'
 # *** IMPORTANT. Data to run the tests
 # Parameters. For the api tests to run
 #  - Note: We expect an unsued plan and a valid account
-Recurly.subdomain      = 'kevinpetry'                         # 'YOUR-SUBDOMAIN' kevinpetry.recurly.com
-Recurly.api_key        = 'cef7538a56794d099b0939e3351f3a08'   # 'YOUR API KEY'
-myAccount = 'KLP-5'                                           # Account_code to use. KLP-2 KLP-01, KLP-5 is valid
-myPlanCode = 'test5'                                          # plan_codes = 'test', test2, test, psy-out-plan, 'free-plan',  # 'bottom-plan'   test4, test5
+Recurly.subdomain      = 'YOUR-SUBDOMAIN'                     # 'YOUR-SUBDOMAIN' SuperKevy.recurly.com
+Recurly.api_key        = 'YOUR API KEY'                       # 'YOUR API KEY' This is your account and looks like a hash ceF7538a56794D099b0939e3351f3a08
+myAccount = 'KLP-5'                                           # YOUR Account_code Found in your Recurly account
+myPlanCode = 'test5'                                          # YOUR plan_codes found in your Recurly configuration plans
 
 
 # Code Follows
@@ -29,8 +29,8 @@ myPlanCode = 'test5'                                          # plan_codes = 'te
 # API subscription count
 describe "Get the Recurly API subscription count. " do
   account=''
-  context 'When a valid account is provided we can test the subcriptions.  ' do
-    it " We expect a valid account using Find a valid account using the account.find method. " do
+  context 'When a valid account is provided we can test the accounts for subcription count.  ' do
+    it " We expect a valid account object is returned using find. " do
       begin
          account = Recurly::Account.find myAccount   # i.e. like 'KLP-01'
          #puts " - INFO: Account: #{account.inspect}"
@@ -63,9 +63,9 @@ end
 
 # Test 2 
 # API subscription create
-describe "Create a subscription using theSubscription API. " do
+describe "Create a subscription using the Subscription API. " do
    #account=''
-  context 'A valid account_code, unused plan_code and required billing information can create a subscription. ' do
+  context 'A valid account_code, unused plan_code and required billing information will create a subscription. ' do
      it('We expect the subscription API to return true when a new subscription is created. ') do
         begin
            #puts ' '
@@ -83,9 +83,9 @@ describe "Create a subscription using theSubscription API. " do
                  :year   => 2019 ,
                  :country              => 'US', 
                  :state                => 'MN',
-                 :city                 => 'Mankato',
-                 :address1             => '322 Carney Ave, Suite980',
-                 :zip                  => '56001' }
+                 :city                 => 'Anytown',
+                 :address1             => '322 Anytown Ave, Suite 980',
+                 :zip                  => '55410' }
            } } )
            response = subscription.save!
            rescue Recurly::Resource::NotFound => e

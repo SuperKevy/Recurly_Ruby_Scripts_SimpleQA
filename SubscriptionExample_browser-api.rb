@@ -22,14 +22,14 @@ require 'uri'
 
 # *** IMPORTANT. Data to run the tests
 # Test 1 Parameters. For the api test to run
-Recurly.subdomain      = 'kevinpetry'                                    # 'YOUR-SUBDOMAIN' kevinpetry.recurly.com
-Recurly.api_key        = 'cef7538a56794d099b0939e3351f3a08'              # 'YOUR API KEY'
+Recurly.subdomain      = 'soacedesk'                                     # 'YOUR-SUBDOMAIN' spacedesk.recurly.com
+Recurly.api_key        = 'YOUR API KEY'                                  # 'YOUR API KEY'  like 'cef7538a56794d099b0939e3351f3a08' 
 
 # Test 2 Parameters. For the browser test to run
-myUserEmail = 'kpetry8384@gmail.com'
-myUserPassword = 'Tornado100$'
+myUserEmail = 'coolone8384@gmail.com'                                    # YOOR recurly login email address
+myUserPassword = 'sornado_bullseye'                                      # YOUR plan_code found in the configuration plans
 mySearchPlan = 'free'                                                    # Plan_code partial match is valid
-myAccount = 'KLP-2'                                                      # This must be valid for test2
+myAccount = 'KLP-2'                                                      # YOUR Recurly account to search
 
 #Test code begins
 # **************************************************
